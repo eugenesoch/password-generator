@@ -1,3 +1,148 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root {
+    --field-blue: #273549;
+    --password-green: #55F991;
+    --white: #ffffff;
+    --button-green: #10B981;
+    --background: #ECFDF5;
+    --subtitle: #6B7280;
+    --heading-main: #2B283A;
+    --heading-accent: #10B981;
+    --divider-color: #D5D4D8;
+}
+
+html[data-theme-light] {
+    --background: #ECFDF5;
+    --subtitle: #6B7280;
+    --heading-main: #2B283A;
+    --heading-accent: #10B981;
+    --divider-color: #D5D4D8;
+}
+
+html[data-theme-dark] {
+    --background: #1F2937;
+    --subtitle: #D5D4D8;
+    --heading-accent: #4ADF86;
+    --heading-main: #ffffff;
+    --divider-color: #2F3E53;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
     margin: 0;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: -1px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--heading-main)
+}
+h1 span {
+    color: var(--heading-accent)
+}
+.subheading {
+    margin: 1rem 0;
+    color: var(--subtitle);
+    font-size: 1.25rem;
+
+}
+
+.module {
+    padding: 2.5rem;
+    width: 32rem;
+    height: 32rem;
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+button {
+    margin: 2rem 0;
+    padding: 9px 17px;
+    border-radius: 6px;
+    border: none;
+    background-color: var(--button-green);
+    color: var(--white);
+}
+
+divider {
+    height: 1px;
+    background-color: var(--divider-color);
+    width: 100%;
+}
+.output-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.output {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--field-blue);
+    color: var(--password-green);
+    font-size: 1rem;
+    line-height: 2rem;
+    height: 2.4rem;
+    width: 13rem;
+    border-radius: 6px;
 }

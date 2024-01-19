@@ -106,12 +106,11 @@ h1 span {
 
 .module {
     padding: 2.5rem;
-    width: 32rem;
-    height: 32rem;
+    min-height: 32rem;
     background-color: var(--background);
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: stretch;
     justify-content: center;
 }
 button {
@@ -121,6 +120,8 @@ button {
     border: none;
     background-color: var(--button-green);
     color: var(--white);
+    display: block;
+    line-height: 1.5rem;
 }
 
 divider {
@@ -129,7 +130,6 @@ divider {
     width: 100%;
 }
 .output-wrapper {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -142,6 +142,7 @@ divider {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: var(--field-blue);
     color: var(--password-green);
     font-size: 1rem;

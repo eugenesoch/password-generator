@@ -67,10 +67,9 @@ table {
     --password-green: #55F991;
     --white: #ffffff;
     --button-green: #10B981;
-    --background: #ECFDF5;
 }
 
-html[data-theme-light] {
+html[data-theme="light"] {
     --background: #ECFDF5;
     --subtitle: #6B7280;
     --heading-main: #2B283A;
@@ -78,7 +77,7 @@ html[data-theme-light] {
     --divider-color: #D5D4D8;
 }
 
-html[data-theme-dark] {
+html[data-theme="dark"] {
     --background: #1F2937;
     --subtitle: #D5D4D8;
     --heading-accent: #4ADF86;

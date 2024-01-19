@@ -47,6 +47,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(src/fa-solid-900.ttf);
+}
+
+
+
+
 :root {
     --field-blue: #273549;
     --password-green: #55F991;
@@ -148,4 +158,16 @@ divider {
     width: 15rem;
     border-radius: 6px;
     cursor: pointer;
+}
+.theme-switch {
+    font-family: FontAwesome;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    border-radius: 100px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
 }

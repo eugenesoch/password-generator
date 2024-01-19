@@ -58,6 +58,11 @@ table {
 
 
 :root {
+    --background: #ECFDF5;
+    --subtitle: #6B7280;
+    --heading-main: #2B283A;
+    --heading-accent: #10B981;
+    --divider-color: #D5D4D8;
     --field-blue: #273549;
     --password-green: #55F991;
     --white: #ffffff;

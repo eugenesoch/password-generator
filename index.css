@@ -53,10 +53,6 @@ table {
     --white: #ffffff;
     --button-green: #10B981;
     --background: #ECFDF5;
-    --subtitle: #6B7280;
-    --heading-main: #2B283A;
-    --heading-accent: #10B981;
-    --divider-color: #D5D4D8;
 }
 
 html[data-theme-light] {
@@ -122,6 +118,7 @@ button {
     color: var(--white);
     display: block;
     line-height: 1.5rem;
+    cursor: pointer;
 }
 
 divider {
@@ -150,4 +147,5 @@ divider {
     height: 2.4rem;
     width: 15rem;
     border-radius: 6px;
+    cursor: pointer;
 }
